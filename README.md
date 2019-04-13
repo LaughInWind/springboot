@@ -1,2 +1,2 @@
 # springboot
-a simple demo of springboot
+This is a demo about springboot

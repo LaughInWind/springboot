@@ -1,0 +1,33 @@
+spring:
+#设置数据库
+  datasource:
+    #引入阿里巴巴druid数据库连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+    #设置数据库路径和编码格式
+    url: jdbc:mysql://localhost:3306/springboot?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    #数据库用户名
+    username: root
+    #数据库密码
+    password: 1234
+  #选择使用配置文件 dev开发环境 prod生产环境
+  profiles:
+    active: dev
+  #设置thymeleaf模版引擎
+  thymeleaf:
+    #设置前缀
+    prefix: classpath:/templates/
+    #设置后缀
+    suffix: .html
+    #设置编码格式
+    encoding: UTF-8
+    #设置前端文件类型
+    mode: HTML
+  mvc:
+    #设置网页图标
+    favicon:
+      #默认开启网页图标
+      enabled: true
+#自定义属性值以供Java文件调用
+author:
+  name: jingye
+  age: 24

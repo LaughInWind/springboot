@@ -1,0 +1,10 @@
+server:
+  port: 8888
+  #配置简易SSL
+  #ssl:
+    #key-store: .keystore
+    #key-store-password: 123456
+    #key-store-type: JKS
+    #key-alias: tomcat
+  servlet:
+    context-path: /springboot
