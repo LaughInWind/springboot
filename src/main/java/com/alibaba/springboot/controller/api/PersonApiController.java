@@ -1,25 +1,23 @@
-package com.alibaba.springboot.controller;
+package com.alibaba.springboot.controller.api;
 
 import com.alibaba.springboot.bean.Person;
+import com.alibaba.springboot.controller.base.ApiController;
 import com.alibaba.springboot.jpa.PersonJPA;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @author jingye
- * @className ApiController
- * @description Spring Boot API 接口
- * @date 2019/4/13 21:23
+ * @className PersonApiController
+ * @description Person的控制类
+ * @date 2019/4/14 22:11
  */
 @RestController
-@RequestMapping("/api")
-public class ApiController {
+public class PersonApiController extends ApiController {
     @Autowired
     private PersonJPA personJPA;
     /**

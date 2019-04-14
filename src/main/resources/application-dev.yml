@@ -8,3 +8,17 @@ server:
     #key-alias: tomcat
   servlet:
     context-path: /springboot
+
+spring:
+  data:
+    mongodb:
+      #数据库主机地址 默认localhost
+      host: localhost
+      #数据库连接默认端口 27017
+      port: 27017
+      #数据库连接URL
+      uri: mongodb://localhost:27017/study
+      database: study
+      repositories:
+        #repository支持是否开启，默认为已经开启
+        enabled: true
